@@ -1,4 +1,4 @@
-# DocuSign Self-Serve Retention Case Study
+# Docusign Self-Serve Retention Case Study
 
 **Objective:** Identify and size the top opportunities to improve self-serve customer retention.
 
@@ -47,7 +47,7 @@ Getting a customer to 20 sends cuts churn by ~3x. This is the activation thresho
 | Created ≥1 template | 13.4% |
 | No templates | 27.9% |
 
-If someone built a template, DocuSign is part of their actual workflow. That's when they stop leaving.
+If someone built a template, Docusign is part of their actual workflow. That's when they stop leaving.
 
 **3. Passive churn is recoverable**
 
