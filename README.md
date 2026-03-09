@@ -1,8 +1,7 @@
 # DocuSign Self-Serve Retention Case Study
 
-Analysis identifying the top opportunities to improve self-serve customer retention at DocuSign.
+**Objective:** Identify and size the top opportunities to improve self-serve customer retention.
 
----
 
 ## Dataset
 
@@ -48,7 +47,7 @@ Getting a customer to 20 sends cuts churn by ~3x. This is the activation thresho
 | Created ≥1 template | 13.4% |
 | No templates | 27.9% |
 
-Templates signal workflow integration — DocuSign embedded into how the customer operates.
+If someone built a template, DocuSign is part of their actual workflow. That's when they stop leaving.
 
 **3. Passive churn is recoverable**
 
@@ -57,11 +56,11 @@ Templates signal workflow integration — DocuSign embedded into how the custome
 | Active (deliberate cancellation) | $2.33M |
 | Passive (billing/payment failure) | $1.73M |
 
-42% of churned accounts left because a card expired — not because they chose to. These are recoverable without product changes.
+42% of churned accounts left because a card expired. Not a product problem — just a billing one. These are recoverable without product changes.
 
 **4. Annual billing nearly halves churn**
 
-Monthly → 42% churn | Annual → 23% churn. Annual subscribers self-select as higher intent and face higher switching friction.
+Monthly → 42% churn | Annual → 23% churn. Annual customers are just more committed — they paid upfront and switching costs more.
 
 ---
 
@@ -71,7 +70,16 @@ Monthly → 42% churn | Annual → 23% churn. Annual subscribers self-select as 
 Implement pre-expiry card reminders, automated dunning retries, and grace periods before cancellation. Assuming 30% recovery on $1.73M passive churn ARR.
 
 ### 2. Improve early activation (~$170K ARR opportunity, conservative)
-The zero-send segment (4,405 accounts, 45% churn, $382K ARR at risk) never reached the first meaningful product moment. A guided first-send onboarding flow and early lifecycle nudges targeting the 20-send threshold is the entry point. Full low-engagement population (<20 sends) represents $1.82M in churned ARR.
+4,405 accounts never sent a single document — 45% of them churned, putting $382K ARR at risk. They signed up and never actually used it. A better onboarding flow that gets people to that first send (and pushes toward 20) is where to start.
+
+| Lifetime Sends | Accounts | Churn Rate | Churned ARR |
+|----------------|----------|------------|-------------|
+| 0 | 4,405 | 45% | $383K |
+| 1–5 | 5,630 | 49% | $598K |
+| 6–20 | 7,166 | 51% | $836K |
+| **Total <20 sends** | **17,201** | | **$1.82M** |
+
+The full low-engagement group (<20 sends) represents $1.82M in churned ARR — the ceiling of this opportunity. The conservative $170K estimate assumes a 20pp churn reduction in the zero-send segment only.
 
 | Opportunity | Estimated ARR Preserved | Effort | Confidence |
 |-------------|------------------------|--------|------------|
